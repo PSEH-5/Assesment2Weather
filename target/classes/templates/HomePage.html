@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Weather Forecast</title>
+
+</head>
+
+<body>
+
+<main role="main" class="container">
+
+    <div class="starter-template">
+        <h1>Weather Forecast </h1>
+    </div>
+
+    <ol>
+        <li th:each="task : ${tasks}" th:text="${task}"></li>
+    </ol>
+
+</main>
+<!-- /.container -->
+
+<div id="root">
+</div>
+
+<script type="text/javascript" th:src="@{bundle.js}"></script>
+</body>
+</html>
